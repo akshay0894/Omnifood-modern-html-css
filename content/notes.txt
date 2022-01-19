@@ -1,0 +1,21 @@
+Test and optimize the
+-> make sure your website work in your all browsers 
+  1. caniuse.com to check all css properties suppor in browsers
+  2. use vendor prefix for certain properties
+  3. use of picture tag for different images extensions support for different browsers
+-> test the website on actual mobile devices
+-> optimize all the images in terms of dimesions and file sizes
+  1.set the image size = required size * 2;
+  2.compress the image with squoosh 
+->fix some accessibility issues with wcag
+->run lighthouse performance test in chrome and also check in page speed after launching the site with
+->think about seo
+
+
+//deploy to production server - we can use netlify.com for free web service  hosting
+
+hack to add css behaviour to all elements except the last element -
+for example - we dont want to add margin bottom to all grid childs except the last 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
